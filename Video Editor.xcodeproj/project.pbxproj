@@ -12,6 +12,7 @@
 		27AC5702196D062000656EF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AC5700196D062000656EF5 /* Main.storyboard */; };
 		27AC5704196D062000656EF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AC5703196D062000656EF5 /* Images.xcassets */; };
 		27AC5710196D062000656EF5 /* Video_EditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC570F196D062000656EF5 /* Video_EditorTests.swift */; };
+		27AC571A196D32D400656EF5 /* VideoEditManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC5719196D32D400656EF5 /* VideoEditManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 		27AC5709196D062000656EF5 /* Video EditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Video EditorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AC570E196D062000656EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27AC570F196D062000656EF5 /* Video_EditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video_EditorTests.swift; sourceTree = "<group>"; };
+		27AC5719196D32D400656EF5 /* VideoEditManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEditManager.swift; sourceTree = "<group>"; };
+		27AC571B196D343A00656EF5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		27AC56EE196D062000656EF5 = {
 			isa = PBXGroup;
 			children = (
+				27AC571B196D343A00656EF5 /* AVFoundation.framework */,
 				27AC56F9196D062000656EF5 /* Video Editor */,
 				27AC570C196D062000656EF5 /* Video EditorTests */,
 				27AC56F8196D062000656EF5 /* Products */,
@@ -75,8 +79,9 @@
 		27AC56F9196D062000656EF5 /* Video Editor */ = {
 			isa = PBXGroup;
 			children = (
-				27AC56FC196D062000656EF5 /* AppDelegate.swift */,
+				27AC5719196D32D400656EF5 /* VideoEditManager.swift */,
 				27AC56FE196D062000656EF5 /* ViewController.swift */,
+				27AC56FC196D062000656EF5 /* AppDelegate.swift */,
 				27AC5700196D062000656EF5 /* Main.storyboard */,
 				27AC5703196D062000656EF5 /* Images.xcassets */,
 				27AC56FA196D062000656EF5 /* Supporting Files */,
@@ -208,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AC571A196D32D400656EF5 /* VideoEditManager.swift in Sources */,
 				27AC56FF196D062000656EF5 /* ViewController.swift in Sources */,
 				27AC56FD196D062000656EF5 /* AppDelegate.swift in Sources */,
 			);
@@ -277,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -313,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -397,6 +403,7 @@
 				27AC5715196D062000656EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27AC5716196D062000656EF5 /* Build configuration list for PBXNativeTarget "Video EditorTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +412,7 @@
 				27AC5718196D062000656EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
